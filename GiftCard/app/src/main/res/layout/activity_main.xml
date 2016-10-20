@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.thefactorout.giftcard.MainActivity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/gifted_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="100dp"
+                android:text="Gifted Card"
+                android:textColor="@android:color/black"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="left" />
+
+            <ImageView
+                android:id="@+id/logo_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/banner_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/giftedmom"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/email_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email"/>
+            <TextView
+                android:paddingLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/email_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="info@giftedmom.org"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/location_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location"/>
+            <TextView
+                android:paddingLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/location_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BP 8655, Technipole - Polytechnique, Yaounde-Cameroon"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/phone_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone"/>
+            <TextView
+                android:paddingLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/phone_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(237) 24 28 96 480"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/url_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/url"/>
+            <TextView
+                android:paddingLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/url_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http://www.giftedmom.org"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/clock_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock"/>
+            <TextView
+                android:paddingLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/clock_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00am - 5:00pm"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GiftedMom is a leading mobile health solutions provider in Africa. We leverage last mile technologies to provide pregnant women and new mothers access to health information and strengthen linkages to antenatal care."/>
+
+    </LinearLayout>
+
+</ScrollView>
