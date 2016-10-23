@@ -1,0 +1,12 @@
+<style name="TextViewStyle" parent="AppTheme">
+  <item name="android:layout_width">wrap_content</item>
+  <item name="android:layout_height">wrap_content</item>
+  <item name="android:paddingLeft">8dp</item>
+</style>
+
+<TextView
+  android:layout_toRightOf="@id/phone_image_view"
+  android:text="(237) 24 28 96 480"
+  style="@style/TextViewStyle" />
+
+https://developer.android.com/guide/topics/ui/themes.html
