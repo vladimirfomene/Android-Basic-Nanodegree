@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Adds three points to our score board
+     * Adds three points to our score board for team A
      */
     public void plusThreeForTeamA(View view){
         scoreTeamA += 3;
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Adds three points to our score board
+     * Adds three points to our score board for team B
      */
     public void plusThreeForTeamB(View view){
         scoreTeamB += 3;
@@ -70,16 +70,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Adds one point to the score board
+     * Adds one point to the score board for team A
      */
     public void freeThrowForTeamA(View view){
         displayForTeamA(++scoreTeamA);
     }
 
     /**
-     * Adds one point to the score board
+     * Adds one point to the score board for team B
      */
     public void freeThrowForTeamB(View view){
         displayForTeamB(++scoreTeamB);
+    }
+
+
+    /**
+     * Resets both team scores to Zero
+     */
+    public void reset(View view){
+        scoreTeamB = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
 }
