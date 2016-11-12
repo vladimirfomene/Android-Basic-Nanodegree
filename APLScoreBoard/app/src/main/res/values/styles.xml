@@ -21,4 +21,12 @@
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
+    <style name="buttonViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
 </resources>

@@ -38,13 +38,9 @@
                 android:text="0" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
                 android:text="+3 POINTS"
-                android:onClick="plusThreeForTeamA"/>
+                android:onClick="plusThreeForTeamA"
+                style="@style/buttonViewStyle" />
 
             <Button
                 android:layout_width="match_parent"
